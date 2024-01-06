@@ -1,0 +1,507 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+
+<head lang="en">
+	<meta http-equiv="content-type" content="text/html;charset=utf-8">
+	<title>Otrixweb E-commerce Laravel Website Documentation</title>
+	<!-- Framework CSS -->
+	<link rel="stylesheet" href="assets/blueprint-css/screen.css" type="text/css" media="screen, projection">
+	<link rel="stylesheet" href="assets/blueprint-css/print.css" type="text/css" media="print">
+	<!--[if lt IE 8]><link rel="stylesheet" href="assets/blueprint-css/ie.css" type="text/css" media="screen, projection"><![endif]-->
+	<link rel="stylesheet" href="assets/blueprint-css/plugins/fancy-type/screen.css" type="text/css"
+		media="screen, projection">
+	<style type="text/css" media="screen">
+		p,
+		table,
+		hr,
+		.box {
+			margin-bottom: 25px;
+		}
+
+		.box p {
+			margin-bottom: 10px;
+		}
+
+		li {
+			margin-top: 10px;
+			margin-bottom: 10px;
+		}
+
+		.my-3 {
+			margin-top: 3rem;
+			margin-bottom: 3rem;
+		}
+	</style>
+</head>
+
+
+<body>
+	<div class="container">
+
+		<h3 class="center alt">&ldquo;Otrixweb E-commerce Laravel Website&rdquo; Documentation by Otrixweb
+			&ldquo;&rdquo;
+			v1.4</h3>
+
+		<hr>
+
+		<h1 class="center">&ldquo;Otrixweb E-commerce Laravel Website&rdquo;</h1>
+
+		<div class="borderTop">
+			<div class="span-6 colborder info prepend-1">
+				<p class="prepend-top">
+					<strong>
+						Created: 19/08/2023<br>
+						By: Otrixweb<br>
+						Email: <a href="mailto:otrixapp@gmail.com">otrixapp@gmail.com</a>
+					</strong>
+				</p>
+			</div><!-- end div .span-6 -->
+
+			<div class="span-12 last">
+				<p class="prepend-top append-0">Thank you for purchasing my theme. If you have any questions that are
+					beyond the scope of this help file, please feel free to email via my user page contact form <a
+						href="http://themeforest.net/user/otrixwebandapp">here</a>. Thanks so much!</p>
+			</div>
+		</div><!-- end div .borderTop -->
+
+		<hr>
+
+		<h2 id="toc" class="alt">Table of Contents</h2>
+		<ol class="alpha">
+			<li><a href="#overView">Overview</a></li>
+			<li><a href="#requirments">System Requirements</a></li>
+			<li><a href="#installation">Installation</a></li>
+			<li><a href="#aisection">AI Section</a></li>
+			<li><a href="#runproject">Run Your Project</a></li>
+			<li><a href="#adminFlow">Admin Flow</a></li>
+			<li><a href="#projectStructre">Permission</a></li>
+			<li><a href="#socialLogin">Social Login</a></li>
+		</ol>
+
+		<hr>
+
+		<h3 id="overView"><strong>A) Overview</strong> - <a href="#toc">top</a></h3>
+		<span>Otrixweb is an e-commerce website built using the Laravel framework, a popular PHP framework for web
+			development. The
+			website provides a platform for users to buy and sell products online, with features such as product
+			listings, shopping
+			cart, checkout, and payment processing.
+
+			The website has a modern and user-friendly interface that makes it easy for users to navigate and find the
+			products they
+			are looking for. The product listings include detailed descriptions, images, and reviews from other users to
+			help buyers
+			make informed purchasing decisions.
+
+			The shopping cart feature allows users to add products to their cart and proceed to checkout, where they can
+			enter their
+			shipping and payment information. The website integrates with various payment gateways to process
+			transactions securely.
+
+		</span>
+		</br>
+		</br>
+		<span class="secondPara">Some of the main Technologies used are</span>
+		</br>
+		</br>
+
+		<ol class="expanded">
+			<li>PHP 8.1</li>
+			<li>Laravel 10.x</li>
+			<li>Bootstrap 5.x</li>
+		</ol>
+
+		<hr>
+
+		<h3 id="requirments" style="margin-top: 50px;"><strong>B) System Requirements</strong> - <a href="#toc">top</a>
+		</h3>
+		<span>To installing Otrix Commerce Laravel website, Your web server must be running PHP 8.0 or higher and Mysql
+			5.7 or higher. We have tested
+			it with Windows, Mac and Linux but for optimum performance we will recommend to use Linux with Apache
+			webserver. Below
+			are a list of items you should ensure your host can comply with. </span>
+		</br>
+		</br>
+
+		<ul>
+			<li>PHP 8.1+</li>
+			<li>MYSQL 5.7+</li>
+			<li>Composer 2.x+</li>
+			<li>MBString Extension</li>
+			<li>MYSQLi Extension</li>
+			<li>CURL Extension (recommended)</li>
+		</ul>
+		<p>* In most hosting accounts, these extensions are enabled by default. But you should check with your hosting
+			provider.</p>
+		<hr>
+
+
+
+		<h3 id="installation" style="margin-top: 50px;"><strong>C) Installation</strong> - <a href="#toc">top</a></h3>
+		<p>Here video guide </p>
+		<iframe height="480" width="500" src="https://www.youtube.com/embed/P3cnPLKxV5s">
+		</iframe>
+		</br>
+		</br>
+		</br>
+
+		<ol class="styledlist listCustom" type="A">
+			<li>Create Database:Create new database on your web server
+				<b>Otricommerce Database</b> folder as shown below
+			</li>
+			</br>
+			</br>
+			<li>Now upload otrixcommerce laravel zip file on your webserver using FTP/Cpanel.
+				Laravel Web zip file location: <b>otrixcommercelaravel > Code > otrixweblaravelwebsite</b>
+			</li>
+			</br>
+			<li>
+				Now open command promte and navigate to your project folder (we recommend to use Putty)
+			</li>
+			<br>
+			<li>Then run below command</li>
+			<code class="codeBlockBg">
+							php artisan server
+						</code>
+			</br>
+			<p>or</p>
+			<p>you can also open by typing your domain name like http://localhost/otrixweblaravelwebsite/</p>
+			<ul>
+				<li>
+					Now you can see installation screen apear like below
+					<img style="margin-top: 20px;" height=" 100%" width="100%" src="assets/images/installation_1.png"
+						alt="HTML Structure" />
+					<p>Now press start installation button</p>
+				</li>
+				<li>
+					<p>Now we run diagnosis to check your php version and etc if all good then you can press Database
+						setup button</p>
+					<img style="margin-top: 20px;" height=" 100%" width="100%" src="assets/images/installation_2.png"
+						alt="HTML Structure" />
+
+				</li>
+				<li>
+					<p>Now fillup your database connection details and press configure database button</p>
+					<img style="margin-top: 20px;" height=" 100%" width="100%" src="assets/images/installation_3.png"
+						alt="HTML Structure" />
+
+				</li>
+				<li>
+					<p>If connection is successfully done then you can press import database button</p>
+					<img style="margin-top: 20px;" height=" 100%" width="100%" src="assets/images/installation_4.png"
+						alt="HTML Structure" />
+
+				</li>
+				<li>
+					<p>After successfully import database you can now fillup app name and set admin credentials</p>
+					<img style="margin-top: 20px;" height=" 100%" width="100%" src="assets/images/installation_5.png"
+						alt="HTML Structure" />
+
+				</li>
+				<p>After successfully configuration you are good to go </p>
+				<img style="margin-top: 20px;" height=" 100%" width="100%" src="assets/images/installation_6.png"
+					alt="HTML Structure" />
+
+				</li>
+			</ul>
+
+
+
+			<p><b>Congratulations!</b> your laravel application Successfully installted and ready to use
+			</p>
+		</ol>
+
+		<hr>
+
+		<h3 id="aisection" style="margin-top: 50px;"><strong>D) AI Section</strong> - <a href="#toc">top</a></h3>
+		<p>Here video guide </p>
+		<iframe height="480" width="500" src="https://www.youtube.com/embed/ttC9uMQmv3o">
+		</iframe>
+		</br>
+		</br>
+		</br>
+		<hr>
+
+
+		<h3 id="runproject"><strong>E) Run Your Project</strong> - <a href="#toc">top</a></h3>
+		<p><b>Run Website</b></p>
+		<p>Open your webbrowser and enter your domain: https://yourdomain.com</p>
+		</br>
+		<img height=" 100%" width="60%" src="assets/images/screenshot1.png" alt="HTML Structure" />
+		</br>
+		<p>Here we go website runing Successfully now open the admin panel</p>
+
+		<p><b>Open Admin Panel</b></p>
+		<p>Open your webbrowser and enter your domain: https://yourdomain.com/admin</p>
+		</br>
+		<img height=" 100%" width="60%" src="assets/images/admin.png" alt="HTML Structure" />
+		<p>Super admin email and password as below</p>
+		<p>After successful login you will reach to Admin Dashboard.
+		</p>
+		<img height=" 100%" width="80%" src="assets/images/webadmin.png" alt="HTML Structure" />
+		</br></br>
+		<h4>Admin Panel consist 24 modules listed below -</h4>
+
+		<ol>
+			<li><strong>Catalog > Categories</strong> - For all Categories and sub-categories </li>
+			<li><b>Products</b> - Product Management module create/update/delete product</li>
+			<li><b>Coupon</b> - Create Coupon for customer with percentage/fixed amount</li>
+			<li><b>Option</b> - Create option here like size.color etc </li>
+			<li><b>Manufactureres</b> - Add your product mnufactureres like zara,dell,apple,nike etc</li>
+			<li><b>Attribute Group</b> - Here is all type attribute group like your product specification General,
+				Display Feature etc
+			</li>
+			<li><b>Review</b> - You can view customer submitted review here </li>
+			<li><b>Shipping</b> - Add your shipping method and shipping charges here </li>
+			<li><b>Length Class</b> - Crud length class here like your product has length </li>
+			<li><b>Weight Class</b> - Crud Weight class here like your product has Weight </li>
+			<li><b>Order Status</b> - Crud order status like pending,completed etc </li>
+			<li><b>Stock Status</b> - Crud stock status like out of stock,in stock etc </li>
+			<li><b>Countries</b> - Crud Country </li>
+			<li><b>Settings </b> - Settting up website color,social media links ,contact info,etc </li>
+			<li><b>Support </b> - Contact us form data </li>
+			<li><b>Marekting Section </b> - SMS Marekting,Email Marekting,Notifications </li>
+			<li><b>Tax Rate</b> - Add your tax rates</li>
+			<li><b>Customer </b> - Manage your customer like delete,add new etc</li>
+			<li><b>Sales > Order </b> - Manage your order like add order history and change order status</li>
+			<li><b>User </b> - Manage user for your admin panel use like Editor,sales etc</li>
+			<li><b>CMS > Manage Cms </b> - Create pages like terms ,privacy,or any informative </li>
+			<li><b>CMS > Deals of the day </b> - Add remove product to your DOD Section </li>
+			<li><b>Role&Permission </b> - Manage Role and Permission like create Editor role and assign some specific
+				Permission to him </li>
+			<li><b>Design </b> - Change Application banner images from here </li>
+
+		</ol>
+
+		<hr>
+
+		<h3 id="adminFlow"><strong>F) Admin Panel Flow </strong> - <a href="#toc">top</a></h3>
+		<h6>Login</h6>
+		<p>This is the login page. If you have entered the vaild email and password.
+			You will be logged in successfully.</p>
+
+		<img height=" 100%" width="100%" src="assets/images/web_flow_1.png" alt="HTML Structure" />
+		</br>
+		<p></p>
+		<h6>Dashboard</h6>
+		<p>After login,at first you will find the Dashboard where you can find the overview of your business. all the
+			sell
+			will be shown in the dashboard.</p>
+		<img height=" 100%" width="100%" src="assets/images/webadmin.png" alt="HTML Structure" />
+		</br>
+		<p></p>
+		<h6>Add Category</h6>
+		<p>You can add different category name of the store in add category module.</p>
+		<img height=" 100%" width="100%" src="assets/images/web_flow_3.png" alt="HTML Structure" />
+		</br>
+		<p></p>
+		<h6>Add Manufacturer</h6>
+		<p>You can add different manufacturer name of the store in add manufacturer module.</p>
+		<img height=" 100%" width="100%" src="assets/images/web_flow_4.png" alt="HTML Structure" />
+		</br>
+		<p></p>
+		<h6>Add Language</h6>
+		<p>Add New language from add language module.</p>
+		<img height=" 100%" width="100%" src="assets/images/web_flow_5.png" alt="HTML Structure" />
+		</br>
+		<p></p>
+		<h6>Add Product</h6>
+		<p>Add Product With some required field and need to add product name,descriptions in multiple language if you
+			have already add multiple languges in language module</p>
+		<img height=" 100%" width="100%" src="assets/images/web_flow_6.png" alt="HTML Structure" />
+		<p>Add General data model,Weight etc</p>
+		<img height=" 100%" width="100%" src="assets/images/web_flow_7.png" alt="HTML Structure" />
+		<p>Link Data Category,Brands and Relered Products</p>
+		<img height=" 100%" width="100%" src="assets/images/web_flow_8.png" alt="HTML Structure" />
+		<p>Add your product option</p>
+		<img height=" 100%" width="100%" src="assets/images/web_flow_9.png" alt="HTML Structure" />
+		<p>Add your product Attribute</p>
+		<img height=" 100%" width="100%" src="assets/images/web_flow_10.png" alt="HTML Structure" />
+		<p>Add your product special</p>
+		<img height=" 100%" width="100%" src="assets/images/web_flow_11.png" alt="HTML Structure" />
+		<p>Add your product additional images</p>
+		<img height=" 100%" width="100%" src="assets/images/web_flow_12.png" alt="HTML Structure" />
+		</br>
+		<p></p>
+		<h6>Website Setting</h6>
+		<p>Modify website setting like change store name,logo,email,social account ,website themecolor etc</p>
+		<img height=" 100%" width="100%" src="assets/images/web_flow_13.png" alt="HTML Structure" />
+		<img height=" 100%" width="100%" src="assets/images/web_flow_14.png" alt="HTML Structure" />
+		<img height=" 100%" width="100%" src="assets/images/web_flow_15.png" alt="HTML Structure" />
+
+		<hr>
+
+		<h3 id="projectStructre"><strong>G) Add New Permission </strong> - <a href="#toc">top</a></h3>
+		<p>To add new Permission is easy task just follow steps below</p>
+		<p>first create permission from https://yourdomain.com/admin/permission/add </p>
+		<img height=" 100%" width="80%" src="assets/images/permission.png" alt="HTML Structure" />
+		</br>
+		<p>After that create new array in config > permission_name.php like below </p>
+		<img height=" 100%" width="80%" src="assets/images/install_8.png" alt="HTML Structure" />
+		</br>
+		<p>Clear Cache </p>
+		<img height=" 100%" width="100%" src="assets/images/clear_cache.png" alt="HTML Structure" />
+
+		<p>Now you can set permission for this example module.</p>
+		</br>
+		<img height=" 100%" width="100%" src="assets/images/role_add.png" alt="HTML Structure" />
+		<p>Simply assign this module permission for specific role and save role</p>
+		<hr>
+
+
+		<h3 id="socialLogin"><strong>H)Social Login </strong> - <a href="#toc">top</a></h3>
+		<p>To implement google login follow below proccess </p>
+		<ol>
+			<h2>A.Google Login</h2>
+			<li class="my-3">
+				Goto the <a href="https://console.cloud.google.com/"
+					target="_blank">https://console.cloud.google.com/</a></li>
+
+			<li class="my-3">
+				<p>Click top left dropdown and create new project</p>
+				<img height=" 100%" width="80%" src="assets/images/social2.png" alt="HTML Structure" />
+				<br>
+				<img height=" 100%" width="80%" src="assets/images/social3.png" alt="HTML Structure" />
+			</li>
+			<li class="my-3">
+				<p>Enter project name and click create</p>
+				<img height=" 100%" width="80%" src="assets/images/social4.png" alt="HTML Structure" />
+			</li>
+			<li class="my-3">
+				<p>Select project</p>
+				<img height=" 100%" width="80%" src="assets/images/social5.png" alt="HTML Structure" />
+			</li>
+			<li class="my-3">
+				<p>Make sure your project selected & Click OAuth consent screen</p>
+				<img height=" 100%" width="80%" src="assets/images/social6.png" alt="HTML Structure" />
+			</li>
+			<li class="my-3">
+				<p>Make sure your project selected & Click OAuth consent screen</p>
+				<img height=" 100%" width="80%" src="assets/images/social6.png" alt="HTML Structure" />
+			</li>
+			<li class="my-3">
+				<p>Select External</p>
+				<img height=" 100%" width="80%" src="assets/images/social7.png" alt="HTML Structure" />
+			</li>
+			<li class="my-3">
+				<p>Fillup basic details</p>
+				<img height=" 100%" width="80%" src="assets/images/social8.png" alt="HTML Structure" />
+			</li>
+			<li class="my-3">
+				<p>Fillup website information & click save and continue</p>
+				<img height=" 100%" width="80%" src="assets/images/social9.png" alt="HTML Structure" />
+			</li>
+			<li class="my-3">
+				<p>Click add remove scopes</p>
+				<img height=" 100%" width="80%" src="assets/images/social10.png" alt="HTML Structure" />
+			</li>
+			<li class="my-3">
+				<p>Select Top 3 and click save and continue</p>
+				<img height=" 100%" width="80%" src="assets/images/social11.png" alt="HTML Structure" />
+			</li>
+			<li class="my-3">
+				<p>Add test users it will help you to test your integration before you go live</p>
+				<img height=" 100%" width="80%" src="assets/images/social12.png" alt="HTML Structure" />
+			</li>
+			<li class="my-3">
+				<p>Click back to dashboard</p>
+				<img height=" 100%" width="80%" src="assets/images/social13.png" alt="HTML Structure" />
+			</li>
+			<li class="my-3">
+				<p>Click credentials after that click on create credentials and select OAuth Client ID</p>
+				<img height=" 100%" width="80%" src="assets/images/social14.png" alt="HTML Structure" />
+			</li>
+			<li class="my-3">
+				<p>Application type web application and most important Authorised redirect URL must be same as laravel
+					.env file variable </p>
+				<img height=" 100%" width="80%" src="assets/images/social15.png" alt="HTML Structure" />
+			</li>
+			<li class="my-3">
+				<p>Copy credentials </p>
+				<img height=" 100%" width="80%" src="assets/images/social16.png" alt="HTML Structure" />
+			</li>
+			<li class="my-3">
+				<p> Update value in .env file </p>
+				<img height=" 100%" width="80%" src="assets/images/social17.png" alt="HTML Structure" />
+				<br>
+				<h4>That's it your google login implementation done now</h4>
+			</li>
+
+		</ol>
+
+		<h2>B.Facebook Login</h2>
+		<ol>
+			<li class="my-3">
+				Goto the <a href="https://developers.facebook.com/" target="_blank">https://developers.facebook.com/</a>
+				and click on my apps
+			</li>
+			<li class="my-3">
+				<p> Click on create app</p>
+				<img height=" 100%" width="80%" src="assets/images/social18.png" alt="HTML Structure" />
+				<br>
+			</li>
+			<li class="my-3">
+				<p> Click Allow people to login</p>
+				<img height=" 100%" width="80%" src="assets/images/social19.png" alt="HTML Structure" />
+				<br>
+			</li>
+			<li class="my-3">
+				<p> Enter app name and click create app</p>
+				<img height=" 100%" width="80%" src="assets/images/social20.png" alt="HTML Structure" />
+				<br>
+			</li>
+			<li class="my-3">
+				<p> Click setting Basic and fillup details</p>
+				<img height=" 100%" width="80%" src="assets/images/social21.png" alt="HTML Structure" />
+				<br>
+			</li>
+			<li class="my-3">
+				<p> Click on setting > advance and fillup share redirect domain allow list</p>
+				<img height=" 100%" width="80%" src="assets/images/social22.png" alt="HTML Structure" />
+				<br>
+			</li>
+			<li class="my-3">
+				<p> Click on product > facebook login setting </p>
+				<img height=" 100%" width="80%" src="assets/images/social23.png" alt="HTML Structure" />
+				<br>
+			</li>
+			<li class="my-3">
+				<p>Fillup valid OAuth Redirect URL </p>
+				<img height=" 100%" width="80%" src="assets/images/social24.png" alt="HTML Structure" />
+				<br>
+			</li>
+			<li class="my-3">
+				<p>Copy Client App ID and App Secret from setting > basic</p>
+				<img height=" 100%" width="80%" src="assets/images/social25.png" alt="HTML Structure" />
+				<br>
+			</li>
+			<li class="my-3">
+				<p>Past value in .env file</p>
+				<img height=" 100%" width="80%" src="assets/images/social26.png" alt="HTML Structure" />
+				<br>
+			</li>
+			<h4>Your facebook integration completed</h4>
+
+		</ol>
+
+		<hr>
+
+
+		<p>Once again, thank you so much for purchasing this product. As I said at the beginning, I'd be glad to
+			help
+			you
+			if you have any questions relating to this product. No guarantees, but I'll do my best to assist. If
+			you
+			have
+			a more general question relating to the product on ThemeForest, you might consider visiting the
+			forums
+			and
+			asking your question in the "Item Discussion" section.</p>
+
+		<p class="append-bottom alt large"><strong>Otrixweb</strong></p>
+		<p><a href="#toc">Go To Table of Contents</a></p>
+
+		<hr class="space">
+	</div><!-- end div .container -->
+</body>
+
+</html>
